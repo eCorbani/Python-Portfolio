@@ -1,0 +1,32 @@
+{% extends "model-page.html" %}
+
+{% block content %}
+
+<h2>Event</h2>
+
+<form action="submit" method="POST"> {% csrf_token %}
+    <label>Title</label>
+    <input type="number" name="event_id" value="{{ event.id }}" hidden>
+    <br>
+    <input type="text" name="title" size="27" value="{{ event.title }}">
+    <br>
+    <label>Event Date</label>
+    <br>
+    <input type="datetime-local" name="event_date" value="{{ event.get_date_input_event }}">
+    <br>
+    <label>Description</label>
+    <br>
+    <textarea name="description" id="" cols="30" rows="10">{{ event.description }}</textarea>
+    <br>
+    <label>Location</label>
+    <br>
+    <input type="text" name="location" size="27" value="{{ event.location }}">
+    <br>
+    <br>
+    <button type="submit">Save</button>
+    <a href="/">
+        <button type="button">Cancel</button>
+    </a>
+</form>
+
+{% endblock %}

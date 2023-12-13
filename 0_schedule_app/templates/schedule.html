@@ -1,0 +1,21 @@
+{% extends "model-page.html" %}
+
+{% block content %}
+    <h2>Appointments</h2>
+    <a href="event/">
+        <button type="button">New Event</button>
+    </a>
+    <ul style="font-size: 18px">
+        {% for event in events %}
+            <li>
+                <div style={% if event.get_late_events %}
+                            "color:red"
+                            {% endif %}>
+                    {{ event.title }} -- {{ event.get_event_date }}
+                    ( <a href="event/?id={{ event.id }} ">Edit</a>
+                    / <a href="event/delete/{{ event.id }}/">Delete</a> )
+                </div>
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}
