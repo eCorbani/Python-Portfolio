@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: corbani-image-processing-package
+Version: 0.0.1
+Summary: My short description
+Home-page: https://github.com/eCorbani/image-processing-package
+Author: Edson Luis Corbani
+Author-email: corbani.edson@gmail.com
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: scikit-image>=0.16.1
+
+# package_name
+
+Description. 
+The package corbani_image_processing is used to:
+	Processing:
+		- Histogram matching
+		- Structural similarity
+		- Resize image
+	Utils: 
+		- Read image
+		- Save image
+		- Plot image
+		- Plot result
+		- Plot histogram
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install package_name
+
+```bash
+pip install corbani_image_processing_package
+```
+
+## Author
+Corbani
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
