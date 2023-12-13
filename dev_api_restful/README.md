@@ -1,4 +1,5 @@
 People and Skills API
+
 Overview
 
 This API facilitates the management of individuals and their skills using RESTful principles. Users can add, update, and remove tasks related to people and their respective abilities. It simplifies the process of organizing and manipulating information about individuals and their skill sets.
